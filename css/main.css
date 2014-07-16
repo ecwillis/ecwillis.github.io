@@ -1,4 +1,15 @@
 
+h1.main-logo {
+  font-size: 60px;
+  font-family: 'Kameron', serif;
+  font-weight: bold;
+}
+
+.label-ecw {
+  background:#FCFE33;
+  color: #202020;
+}
+
 .black-on-white {
   padding: 25px;
   background:#FFF;
@@ -10,10 +21,59 @@
   background:#000;
   color:#fff;
 }
+.white-on-black a {
+  color:#FFF;
+}
+.white-on-black .nav>li>a:hover, .white-on-black .nav>li>a:focus {
+  background: #373737;
+  color: #FCFE33;
+}
+
+.medium-text {
+  font-size: 28px;
+  line-height: 32px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.medium-text .nav>li>a {
+  padding: 3px 4px;
+}
 
 .large-text {
   font-size: 40px;
   line-height: 42px;
-  font-family: 'Kameron', serif;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  background: #000;
+  color: #FCFE33;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.sub-sub-title {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  margin-top: 3px;
+}
+.sub-sub-title a {
+  color: #333;
+}
+
+.footer-row {
+  color: #666;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+
+.footer-row a {
+  color: #333;
+  text-decoration: underline;
 }
