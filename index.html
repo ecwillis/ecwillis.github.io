@@ -49,6 +49,15 @@
         <div class="col-xs-12 col-sm-8">
           <h3 class="sub-title">Projects</h3>
           <p class="lead">Listed below are the projects that I built, or worked on with a description of my role in each. Where appropriate, code samples and repository links have been provided as well as a list of the technologies used on each.</p>
+          <p>
+            <a href="#" class="btn btn-default active"><span class="glyphicon glyphicon-align-left"></span> Narrative View</a>
+            <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-list"></span> List View</a>
+            <a href="#" class="btn btn-primary btn-sm active">Leadership</a>
+            <a href="#" class="btn btn-primary btn-sm">Developer</a>
+            <a href="#" class="btn btn-primary btn-sm">DevOps</a>
+            <i class="text-muted">Choose a view, or filter by role.</i>
+          </p>
+          <hr />
         </div>
       </div>
 
@@ -85,9 +94,27 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12 col-sm-8 story-div">
           <p class="ew-all">SnapWire is a photo marketplace based in Santa Barbara, CA who is working on matching photo buyers from the agency world to the up and coming photographers that work within instagram and the mobile photography space. Their app utilizes a native iOS app, and a web app (with JSON API) where photographers can upload their best photo work to sell.</p>
-          <p class="ew-lead"><span class="label label-default">leadership</span> I was originally brought in as a consultant to assist the CEO and the co-founder in building a development strategy that would help them move their development cycles forward.</p>
+          <p class="ew-lead"><span class="label label-default">leadership</span> I was originally brought in as a consultant to assist the CEO and the co-founder in building a development strategy that would help them move their development cycles forward. Prior to my arrival, the team had been using a waterfall method to assign tasks to various developers. As the business and sales needs progressed however, so did the priorities of the app features. Sometimes multiple times per week. This was leaving the developers frustrated and ineffective as they never had time to finish a task before it was shifted again.</p>
+          <p class="ew-lead">Our strategy was to transition the team to an agile development methodology with set sprints, and a clearly defined backlog. This would allow the CEO and future product teams the opportunity to develop the priorities of the business independently of what was being developed for any given sprint. We also re-defined their massive backlog into themes and epics to more clearly outline a product roadmap that could be developed over time.</p>
+          <p class="ew-tech"><span class="label label-default">developer</span> During the agile conversion process I also assisted the development team with both backend and front end development wherever was needed. The largest portion of the project that I undertook was the addition of a shopping cart system into their app where there previously was a single item purchase system called WePay that was causing customer friction. The resulting cart integrated with their complex sales infrastructure allowing buyers to purchase multiple photos at once, while allowing sellers to collect their earnings in an escrow account and take them out at will.</p>
+          <p class="ew-dev-ops"><span class="label label-default">dev-ops</span> As the senior developer on the team at the time, I took over an maintained the devops infrastructure for the app as well. As the user base grew, it became necessary to implement a horizontal scaling paradigm to handle the additional server load. Using the built in AWS tools, we segregated the server responsibilities, and added additional web server nodes underneath the built in AWS load balancer to begin answering traffic in an efficient manner. I developed the Chef recipe's (Opscode) that handled the server deployments, and initiated the auto-acaling mechanism using custom python scripts to build web server nodes as required.</p>
+          <hr/>
+        </div>
+
+        <div class="col-xs-12 col-sm-8 list-div">
+          <p>SnapWire is a photo marketplace based in Santa Barbara, CA who is working on matching photo buyers from the agency world to the up and coming photographers that work within instagram and the mobile photography space. My role included:</p>
+          <ul>
+            <li>Consulted with CEO and Senior team on strategies for product management. <span class="label label-default">leadership</span></li>
+            <li>Worked with team to transistion the development paradigm from waterfall, to scrum / agile methodology. <span class="label label-default">leadership</span></li>
+            <li>Re-defined the backlog into themes and epics which helped define a product roadmap.</li>
+            <li>Assisted development team in completing stories and bug fixes as the backlog was groomed and defined. <span class="label label-default">leadership</span></li>
+            <li>Built and deployed a custom shopping cart system to replace an older single photo purchase system that had been implemented. <span class="label label-default">development</span></li>
+            <li>Worked with marketing team to develop and implement solutions for marketing, including pulling stats from the data that was collected on users, adding data to be collected, and implementing a user tracking an contact system (intercom.io) <span class="label label-default">development</span></li>
+            <li>Developed and maintained DevOps infrastructure for use on AWS infrastructure. <span class="label label-default">dev-ops</span></li>
+            <li>Built vertical scaling servers including auto-scaling and load balanced servers using Chef (opscode) to implement server instances, along with custom python shell scripts that handled the deployment. <span class="label label-default">dev-ops</span></li>
+          </ul>
         </div>
       </div>
 

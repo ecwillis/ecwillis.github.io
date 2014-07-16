@@ -29,6 +29,20 @@ h1.main-logo {
   color: #FCFE33;
 }
 
+.btn-primary {
+  background: #666;
+  border: 1px solid #444;
+}
+.btn-primary:hover {
+  background: #000;
+  color:#FCFE33;
+}
+.btn-primary.active {
+  color: #fff;
+  background-color: #555;
+  color:#FCFE33;
+}
+
 .medium-text {
   font-size: 28px;
   line-height: 32px;
@@ -76,4 +90,8 @@ h1.main-logo {
 .footer-row a {
   color: #333;
   text-decoration: underline;
+}
+
+.list-div {
+  display:none;
 }
