@@ -34,34 +34,37 @@
           <p>My approach to web development is a bit unique however. Having started my career in construction, I take a more holistic approach to developing a project, keeping the larger project goals and objectives in mind. Being able to see the whole picture is what sets me apart from many other developers.</p>
         </div>
         <div class="col-xs-12 col-sm-4">
-          <div class="white-on-black medium-text">
-            <ul class="nav nav-pills nav-stacked">
-              <li><a href="#">Introduction</a><li>
-              <li><a href="#">Projects</a><li>
-              <li><a href="#">Open Source</a><li>
-              <li><a href="#">Contact</a><li>
-            </ul>
+          <div class="affix">
+            <div class="white-on-black medium-text">
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">Introduction</a><li>
+                <li><a href="#projects">Projects</a><li>
+                <li><a href="#personal">Personal</a><li>
+                <li><a href="#">Contact</a><li>
+              </ul>
+            </div>
+            <div class="side-menu">
+              <ul class="list-unstyled side-buttons">
+                <li><i class="text-muted">Choose a view, or filter by role.</i></li>
+                <li><a href="#" class="btn btn-default active" id="nar_view_btn"><span class="glyphicon glyphicon-align-left"></span> Narrative View</a> <a href="#" class="btn btn-default" id="list_view_btn"><span class="glyphicon glyphicon-list"></span> List View</a></li>
+                <li><a href="#" class="btn btn-primary btn-sm act-grp" id="ldr_btn">Leadership</a> <a href="#" class="btn btn-primary btn-sm act-grp" id="dev_btn">Developer</a> <a href="#" class="btn btn-primary btn-sm act-grp" id="devops_btn">DevOps</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
+      <a name="projects"></a>
       <div class="row">
         <div class="col-xs-12 col-sm-8">
           <h3 class="sub-title">Projects</h3>
           <p class="lead">Listed below are the projects that I built, or worked on with a description of my role in each. Where appropriate, code samples and repository links have been provided as well as a list of the technologies used on each.</p>
-          <p>
-            <a href="#" class="btn btn-default active" id="nar_view_btn"><span class="glyphicon glyphicon-align-left"></span> Narrative View</a>
-            <a href="#" class="btn btn-default" id="list_view_btn"><span class="glyphicon glyphicon-list"></span> List View</a>
-            <a href="#" class="btn btn-primary btn-sm act-grp" id="ldr_btn">Leadership</a>
-            <a href="#" class="btn btn-primary btn-sm act-grp" id="dev_btn">Developer</a>
-            <a href="#" class="btn btn-primary btn-sm act-grp" id="devops_btn">DevOps</a>
-            <i class="text-muted">Choose a view, or filter by role.</i>
-          </p>
           <hr />
         </div>
       </div>
 
-      <div class="row">
+      <!-- Start SnapWire -->
+      <div class="row lead-row">
         <div class="col-xs-12 col-sm-3">
           <a href="https://www.snapwi.re" target="_blank"><img src="img/snapwire.png" class="img-responsive" alt="Snapwire Screen Shot" /></a>
         </div>
@@ -115,10 +118,13 @@
             <li class="ew-dev-ops ec-content">Developed and maintained DevOps infrastructure for use on AWS infrastructure. <span class="label label-default">dev-ops</span></li>
             <li class="ew-dev-ops ec-content">Built a horizontal scaling server setup using AWS auto-scaling and load balancing. Unitlized Chef (opscode) to implement and deploy server instances, along with custom python shell scripts that handled the deployment. <span class="label label-default">dev-ops</span></li>
           </ul>
+          <hr/>
         </div>
       </div>
+      <!-- END: Snapwire -->
 
-      <div class="row">
+      <!-- START: CreativeDistrict -->
+      <div class="row lead-row">
         <div class="col-xs-12 col-sm-3">
           <a href="http://creativedistrict.com/" target="_blank"><img src="img/creativedistrict.png" class="img-responsive" alt="Creative District Screen Shot" /></a>
         </div>
@@ -155,12 +161,190 @@
         <div class="col-xs-12 col-sm-8 story-div">
           <p class="ew-all ec-content">Originally called TCX.io, Creative District was a startup that was incubated out of Technicolor, one of the largest entertainment companies in the world. The idea of the startup was to create a place for creative people to gather online, collaborate, and work together. The project roadmap originally slated a mobile friendly single page app, with a future native app to correspond.</p>
           <p class="ew-lead ec-content"><span class="label label-default">leadership</span> I was brought on as the lead developer for the initial start up phase of this project. My role was to lead the development team as we started working on the project, as well as assist the senior managers and the product team with the product development cycle from the technology perspective.</p>
-          <p class="ew-lead ec-content"><span class="label label-default">leadership</span> I was also charged with leading the agile process, assisting the entire team in understanding and working within the scrum methodology, as well as working as the scrum master for the entire team.</p>
-          <p class="ew-lead ec-content"><span class="label label-default">leadership</span> Additionaly, I helped the senior level managers in understanding the technical requirements of the various phases of the project while they planned out future iterations. This included development resource estimating and estimating.</p>
+          <p class="ew-lead ec-content">I was also charged with leading the agile process, assisting the entire team in understanding and working within the scrum methodology, as well as working as the scrum master for the entire team.</p>
+          <p class="ew-lead ec-content">Additionaly, I helped the senior level managers in understanding the technical requirements of the various phases of the project while they planned out future iterations. This included development resource adn time estimating.</p>
           <p class="ew-tech ec-content"><span class="label label-default">developer</span> As the senior level developer, I led the charge in helping decide which technologies the project would be built upon. The project was from scratch, so initially was started as a PHP project using the Symfony framework, but transitioned before any code was in place to using the MEAN stack (node.js, Express, Angular.js and MongoDB). There was also a relational layer consisting of a Neo4J graph database.</p>
+          <p class="ew-tech ec-content">During the sprint cycles, I not only developed new features while working with the team, I managed the integrations, pull requests, and qa during each sprint.</p>
+          <p class="ew-dev-ops ec-content"><span class="label label-default">dev-ops</span> As the development base grew, and as the team started pushing things to different environments, I ran the DevOps side of the project as well. I designed and architected the server instance setup, and deployed them all using the AWS platform. I also maintained deployment scripts for the developer machines that would deploy dev instances using virtualization with a single command.</p>
+          <hr/>
+        </div>
+
+        <div class="col-xs-12 col-sm-8 list-div">
+          <p class="ew-all ec-content">Originally called TCX.io, Creative District was a startup that was incubated out of Technicolor, one of the largest entertainment companies in the world. The idea of the startup was to create a place for creative people to gather online, collaborate, and work together. The project roadmap originally slated a mobile friendly single page app, with a future native app to correspond.</p>
+          <ul>
+            <li class="ew-lead ec-content">Brought on as the lead developer. Role was to lead the development team, and assist senior managers. <span class="label label-default">leadership</span></li>
+            <li class="ew-lead ec-content">Acted as the developers liason for the product team as they worked on designing the end product. <span class="label label-default">leader</span></li>
+            <li class="ew-lead ec-content">Also charged with defining and leading the agile process for the startup team. Acted as the scrum master for the entire team. <span class="label label-default">leadership</span></li>
+            <li class="ew-lead ec-content">Additionaly, assisted senior managers with estimating time and resources for developers as a part of their larger milestone schedule. <span class="label label-default">leadership</span></li>
+            <li class="ew-tech ec-content">Led the development team as senior architect defining the various parts that would make up the app. Defined the app architecture and how the various logical layers would interact with each other. <span class="label label-default">developer</span></li>
+            <li class="ew-tech ec-content">Oversaw development as it was going on, developing new features as well as acting as the integration and test / qa engineer. Managed pull requests and end of sprint iterations and integrations. <span class="label label-default">developer</span></li>
+            <li class="ew-dev-ops ec-content">Defined and implemented the deployment strategies as well as the server architecure using AWS. Defined a scalability plan that would assist the startup grow as it's traffic increased. <span class="label label-default">dev-ops</span></li>
+          </ul>
+          <hr/>
+        </div>
+
+
+      </div>
+      <!-- END: Creative District -->
+
+      <!-- START: Recruit Talk -->
+      <div class="row lead-row">
+        <div class="col-xs-12 col-sm-3">
+          <a href="http://recruittalk.com/" target="_blank"><img src="img/recruittalk.png" class="img-responsive" alt="Creative District Screen Shot" /></a>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <h3 class="sub-sub-title"><a href="http://recruittalk.com/" target="_blank">RecruitTalk</a></h3>
+          <p class="lead">
+            <strong>Roles</strong>
+            <span class="label label-default">developer</span>
+            <span class="label label-default">leadership</span>
+            <span class="label label-default">dev-ops</span>
+          </p>
+          <p class="">
+            <strong>Technology</strong>
+            <span class="label label-ecw">ruby-on-rails</span>
+            <span class="label label-ecw">postgresql</span>
+            <span class="label label-ecw">redis</span>
+            <span class="label label-ecw">heroku</span>
+            <span class="label label-ecw">ruby motion</span>
+            <span class="label label-ecw">jQuery</span>
+            <span class="label label-ecw">cloudflare</span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 story-div">
+          <p class="ew-all ec-content">RecuitTalk is an app that envisions solving a part of the high school recuitment / athletic scholarship problem. Designed as a web app, and a native iOS app that allowed high school athletes to track their career stats in hopes of being discovered by college recruiters.</p>
+          <p class="ew-lead ec-content"><span class="label label-default">leadership</span> I was brought on as the first hire, to take over development of the app which had been created by an agency. I assisted the CEO in picking the dev team, taking over the project, and developing an ongoing plan to continue to develop features for the app.</p>
+          <p class="ew-lead ec-content"><span class="label label-default">leadership</span> Assisted the CEO in developing an agile development strategy, breaking the project into stories and epic to be handed to the development team. I led the process by acting as the scrum master for the team.</p>
+          <p class="ew-tech ec-content"><span class="label label-default">developer</span> Once the project had been delivered to the dev team, we finalized the code and went through a few rounds of QA, fixing the remaining bugs, hardening the code base, and deploying the code to the various environments.</p>
+          <p class="ew-tech ec-content"><span class="label label-default">developer</span> During the development, I acted as the integration engineer integrating pull requests, and ensuring correct coverage and that all test cases passed.</p>
+
+          <hr/>
+        </div>
+
+        <div class="col-xs-12 col-sm-8 list-div">
+          <p class="ew-all ec-content">RecuitTalk is an app that envisions solving a part of the high school recuitment / athletic scholarship problem. Designed as a web app, and a native iOS app that allowed high school athletes to track their career stats in hopes of being discovered by college recruiters.</p>
+          <ul>
+            <li class="ew-lead ec-content">Assisted CEO in building band new dev team. Also assisted in building a development roadmap for public release of the app, and adding ongoing features. <span class="label label-default">leadership</span></li>
+            <li class="ew-lead ec-content">Worked with the dev team and the CEO to develop an agile development strategy. Worked as the scrum master writing and editing stories, organizing epics, and taking feedback from the product team. <span class="label label-default">leadership</span></li>
+            <li class="ew-tech  ec-content">Finalized the product in preparations for public release. Handled QA and bug fixes that remained from the agency and deployed the code to various environments. <span class="label label-default">developer</span></li>
+            <li class="ew-tech ec-content">Acted as integration engineer handling pull requests, and ensuring proper test coverage and builds passing. <span class="label label-default">developer</span></li>
+          </ul>
+          <hr/>
+        </div>
+
+
+      </div>
+      <!-- END: Recruit Talk -->
+
+      <!-- START: Trov -->
+      <div class="row lead-row">
+        <div class="col-xs-12 col-sm-3">
+          <a href="https://www.trov.com" target="_blank"><img src="img/trov.png" class="img-responsive" alt="Trov App Screen Shot" /></a>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <h3 class="sub-sub-title"><a href="https://www.trov.com" target="_blank">Trōv</a></h3>
+          <p class="lead">
+            <strong>Roles</strong>
+            <span class="label label-default">developer</span>
+          </p>
+          <p class="">
+            <strong>Technology</strong>
+            <span class="label label-ecw">php</span>
+            <span class="label label-ecw">codeigniter</span>
+            <span class="label label-ecw">mysql</span>
+            <span class="label label-ecw">javascript</span>
+            <span class="label label-ecw">mootools</span>
+            <span class="label label-ecw">html5</span>
+            <span class="label label-ecw">ubuntu-linux</span>
+            <span class="label label-ecw">mssql</span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 story-div">
+          <p class="ew-all ec-content">Trov (Originally called VARDA), was one of the first startups that I was ever a part of. I was with them for three years as their ongoing senior developer. I took over the project for a developer who was leaving to become the CTO of his own startup in the bay area. I was the sole developer on the project responsible for the entire stack from front end to backend to server management. The project lasted about two years before the company was purchased and turned into Trov, who I continued on with through version 1.5 of the project.</p>
+          <hr/>
+        </div>
+
+        <div class="col-xs-12 col-sm-8 list-div">
+          <p class="ew-all ec-content">Trov (Originally called VARDA), was one of the first startups that I was ever a part of. I was with them for three years as their ongoing senior developer. I took over the project for a developer who was leaving to become the CTO of his own startup in the bay area. I was the sole developer on the project responsible for the entire stack from front end to backend to server management. The project lasted about two years before the company was purchased and turned into Trov, who I continued on with through version 1.5 of the project.</p>
+          <hr/>
+        </div>
+
+
+      </div>
+      <!-- END: Trov -->
+
+      <!-- START: IntoMobile -->
+      <div class="row lead-row">
+        <div class="col-xs-12 col-sm-3">
+          <a href="https://www.intomobile.com" target="_blank"><img src="img/intomobile.png" class="img-responsive" alt="Intomobile Screen Shot" /></a>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <h3 class="sub-sub-title"><a href="https://www.intomobile.com" target="_blank">Intomobile.com</a></h3>
+          <p class="lead">
+            <strong>Roles</strong>
+            <span class="label label-default">developer</span>
+          </p>
+          <p class="">
+            <strong>Technology</strong>
+            <span class="label label-ecw">php</span>
+            <span class="label label-ecw">wordpress</span>
+            <span class="label label-ecw">javascript</span>
+            <span class="label label-ecw">jquery</span>
+            <span class="label label-ecw">html5</span>
+            <span class="label label-ecw">ubuntu-linux</span>
+            <span class="label label-ecw">ruby on rails</span>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 story-div">
+          <p class="ew-all ec-content">Intomobile was a long term contract position I held for about 9 months as the lead PHP developer for an online news site dedicated to the mobile phone vertical. I was charged with adding features and hardening an existing wordpress installation to handle over 3.5MM unique visitors per month including writing code to pull in data from a custom Rails app that provided data about almost every phone ever made.</p>
+          <hr/>
+        </div>
+
+        <div class="col-xs-12 col-sm-8 list-div">
+          <p class="ew-all ec-content">Intomobile was a long term contract position I held for about 9 months as the lead PHP developer for an online news site dedicated to the mobile phone vertical. I was charged with adding features and hardening an existing wordpress installation to handle over 3.5MM unique visitors per month including writing code to pull in data from a custom Rails app that provided data about almost every phone ever made.</p>
+          <hr/>
+        </div>
+
+
+      </div>
+      <!-- END: IntoMobile -->
+
+      <a name="personal"></a>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <h3 class="sub-title">Personal</h3>
+          <p class="lead">Outlined below are various personal projects that I have worked on for various reasons over the course of my career. Git repositories are given where appropriate.</p>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="sub-sub-title"><a href="https://github.com/ecwillis/trog.de" target="_blank">Trog.de</a></h3>
+          <p class="pull-left">
+            <strong>Technology</strong>
+            <span class="label label-ecw">ruby on rails</span>
+          </p>
+          <p class="pull-left">
+            <strong>Git</strong>
+            <a href="https://github.com/ecwillis/trog.de" target="_blank">https://github.com/ecwillis/trog.de</a>
+          </p>
+        </div>
+      </div>
+       <div class="row">
+        <div class="col-xs-12 col-sm-8">
+          <p class="ew-all ec-content">Trog.de is a really simple URL shortener project I did for myself but never deployed. It was intended to provide self tracking shortened URL's for my own social links complete with an API for deploying from various apps around the web.</p>
           <hr/>
         </div>
       </div>
+      <!-- END: Trov -->
+
 
 <!-- Footer Row: START-->
       <div class="row footer-row">
